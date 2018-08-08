@@ -11,19 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-	$response = \GoogleMaps::load('placeautocomplete')
-               ->setParam([
-                    'input'     => 'bretton 12',
-                    'type' => 'geocode',
-                    'components' => [
-                    	'country' => 'GB'
-                    ],
-                ])
-                ->getResponseByKey('results');
-	return($response);
-    return view('pages.home');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/venues', function() {
 	return view('venues.index');
