@@ -4,20 +4,22 @@ namespace App\Http\Controllers;
 
 use App\Venue;
 use Illuminate\Http\Request;
-use TCG\Voyager\Http\Controllers\VoyagerBreadController;
 
-class VenuesController extends VoyagerBreadController
+class VenuesController extends Request
 {
     
-    public function index()
+    public function index(Request $request)
     {
         $venues = Venue::all();
         $count = $venues->count();
+        if ($request->ajax()) {
+            return $venues->toJson();
+        }
         return view('venues.index', compact('count', 'venues'));
     }
-
-    public function search()
+    
+    public function show(Venue $venue)
     {
-        //
+        return view('venues.show', compact('venue'));
     }
 }

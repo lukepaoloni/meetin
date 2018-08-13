@@ -10383,9 +10383,36 @@ a.text-dark:focus {
 @font-face {
   font-family: 'icomoon';
   src: url(/fonts/icomoon.eot?bf574f32966172ed8cd38556a7252697);
-  src: url(/fonts/icomoon.eot?bf574f32966172ed8cd38556a7252697) format("embedded-opentype"), url(/fonts/icomoon.ttf?dd8b898d65e0380896f125aee5f7370f) format("truetype"), url(/fonts/icomoon.woff?f3b01c313e5bb7fa53624e78f5f2b691) format("woff"), url(/fonts/icomoon.svg?232370a62747f837954f60344827ea54) format("svg");
+  src: url(/fonts/icomoon.eot?bf574f32966172ed8cd38556a7252697) format("embedded-opentype"), url(/fonts/icomoon.ttf?dd8b898d65e0380896f125aee5f7370f) format("truetype"), url(/fonts/icomoon.woff?f3b01c313e5bb7fa53624e78f5f2b691) format("woff"), url(/fonts/icomoon.svg?997c1828e78f10743fb66e7038f9c970) format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon2';
+  src: url(/fonts/icomoon2.eot?8bc5fd5eb874eeab1c29101024106ff9);
+  src: url(/fonts/icomoon2.eot?8bc5fd5eb874eeab1c29101024106ff9) format("embedded-opentype"), url(/fonts/icomoon2.ttf?234d67f010317d71c8ff9dd8cd5d4a54) format("truetype"), url(/fonts/icomoon2.woff?56bbe220dfba3342fa111aad8de28050) format("woff"), url(/fonts/icomoon2.svg?fd98a269ead81b91543db5a282c0355e) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-star-empty {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star-empty:before {
+  content: "\E231";
+  color: #ffda44;
 }
 
 .icon {
@@ -10568,10 +10595,6 @@ a.text-dark:focus {
 
 .icon-eye-blocked:before {
   content: "\E9D1";
-}
-
-.icon-star-empty:before {
-  content: "\E9D7";
 }
 
 .icon-star-half:before {
@@ -10838,6 +10861,26 @@ input.meetin-search:placeholder {
   margin: 0;
 }
 
+.headline-12 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #444;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EEEEEE;
+  border-radius: 32px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f82ff;
+  border-radius: 32px;
+}
+
 .navbar-meetin2 {
   max-width: 50vw;
   position: absolute;
@@ -10874,19 +10917,27 @@ input.meetin-search:placeholder {
   position: absolute;
   width: 26%;
   left: 35px;
-  background-color: #fff;
   bottom: 0;
   min-height: 80vh;
   z-index: 1;
+}
+
+.meetin-app .meetin-search__wrapper {
+  margin-bottom: 20px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  background-color: #fff;
 }
 
 .meetin-app .meetin-map {
   position: absolute;
   width: 100%;
+}
+
+.meetin-app .meetin-results {
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
+  background-color: #fff;
 }
 
 .meetin-search__results-header {
@@ -10903,5 +10954,127 @@ input.meetin-search:placeholder {
 .meetin-search__results {
   max-height: 68vh;
   overflow-y: auto;
+}
+
+.meetin-search__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.meetin-result__img {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.meetin-result__img img {
+  width: 100%;
+}
+
+.meetin-result__content {
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
+}
+
+.meetin-result__content,
+.meetin-result__actions {
+  padding-top: 10px;
+}
+
+.meetin-result__content p {
+  font-size: 14px;
+  color: #767676;
+  font-weight: normal;
+  margin: 0;
+}
+
+.meetin-result__content p:first-of-type {
+  margin-bottom: 10px;
+}
+
+.meetin-result__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.meetin-result__actions .btn.btn-primary {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.venue-modal {
+  background: white;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a.venue-modal,
+a.venue-modal:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.venue-modal:hover {
+  color: #2F82FF;
+}
+
+a.venue-modal {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.venue-modal__name {
+  font-size: 16px;
+  font-weight: 700;
+  float: left;
+  margin-right: 20px;
+}
+
+.venue-modal__img img {
+  width: 100%;
+}
+
+.venue-modal__img {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+}
+
+.venue-modal__content {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.venue-modal__address {
+  font-size: 12px;
+}
+
+.venue-modal__actions {
+  float: right;
+  margin-right: 15px;
+}
+
+.venue-modal__actions .btn.btn-primary {
+  font-size: 12px;
 }
 

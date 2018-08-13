@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #EEEEEE;
+    border-radius: 32px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2f82ff;
+    border-radius: 32px;
+}
 .navbar-meetin2 {
     max-width: 50vw;
     position: absolute;
@@ -28,18 +41,23 @@
         position: absolute;
         width: 26%;
         left: 35px;
-        background-color: #fff;
         bottom: 0;
         min-height: 80vh;
         z-index: 1;
+    }
+    .meetin-search__wrapper {
+        margin-bottom: 20px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.11);
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
+        background-color: #fff;
     }
 
     .meetin-map {
         position: absolute;
         width: 100%;
+    }
+    .meetin-results {
+        box-shadow: 0 10px 30px rgba(0,0,0,0.11);
+        background-color: #fff;
     }
 }
 .meetin-search__results-header {
@@ -55,4 +73,49 @@
 .meetin-search__results {
     max-height: 68vh;
     overflow-y: auto;
+}
+
+
+.meetin-search__result {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.meetin-result__img {
+    flex-basis: 30%;
+}
+
+.meetin-result__img img {
+    width: 100%;
+}
+
+.meetin-result__content {
+    flex-basis: 42%;
+}
+
+.meetin-result__content, .meetin-result__actions {
+    padding-top: 10px;
+}
+
+.meetin-result__content p {
+    font-size: 14px;
+    color: #767676;
+    font-weight: normal;
+    margin: 0;
+}
+
+.meetin-result__content p:first-of-type {
+    margin-bottom: 10px;
+}
+
+.meetin-result__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-basis: 25%;
+}
+
+.meetin-result__actions .btn.btn-primary {
+    box-shadow: none;
 }

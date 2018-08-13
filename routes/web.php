@@ -11,11 +11,14 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
-
-Route::get('/venues', 'VenuesController@index');
-
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+
+Route::get('/', 'HomeController@index');
+
+Route::get('venues', 'VenuesController@index');
+
+Route::get('/venues/{venue}', 'VenuesController@show');
