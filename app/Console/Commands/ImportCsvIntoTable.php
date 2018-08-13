@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Venue;
 use Illuminate\Console\Command;
 use League\Csv\Exception;
 use League\Csv\Reader;
@@ -53,11 +54,7 @@ class ImportCsvIntoTable extends Command
         $csvs = $this->formatCsv($file);
         $bar = $this->output->createProgressBar(count($csvs));
         foreach ($csvs as $csv) {
-            $country = new Country;
-            $country->id = $csv['alpha-3'];
-            $country->name = $csv['name'];
-            $country->continent = $csv['region'];
-            $country->save();
+            Venue::create($csv);
             $bar->advance();
         }
         $bar->finish();

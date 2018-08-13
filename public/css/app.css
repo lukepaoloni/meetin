@@ -10698,6 +10698,13 @@ a.text-dark:focus {
   font-size: 22px;
 }
 
+.separator {
+  padding: 1px;
+  background-color: #2F82FF;
+  height: 8px;
+  margin-left: 10px;
+}
+
 .venue-search {
   width: 100%;
   display: -webkit-box;
@@ -10750,6 +10757,33 @@ a.text-dark:focus {
   line-height: normal;
 }
 
+.meetin-search__wrapper {
+  padding: 10px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+input.meetin-search {
+  border: none;
+  width: 100%;
+  min-height: 40px;
+  font-size: 16px;
+}
+
+input.meetin-search:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+input.meetin-search:focus {
+  text-transform: capitalize;
+}
+
+input.meetin-search:placeholder {
+  text-transform: none;
+}
+
 .btn,
 .btn-lg,
 .btn-group-lg > .btn {
@@ -10759,11 +10793,32 @@ a.text-dark:focus {
   border-radius: 22px;
 }
 
+.btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .btn-lg,
 .btn-group-lg > .btn {
   font-size: 20px;
   padding-left: 26px;
   padding-right: 26px;
+}
+
+.nav-link.active:after {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 4px;
+  background: #2F82FF;
+  content: '';
+  border-radius: 100%;
+}
+
+.nav-link.active {
+  position: relative;
 }
 
 .headline-10 {
@@ -10774,5 +10829,79 @@ a.text-dark:focus {
 .navbar-brand h2 {
   font-weight: 800;
   letter-spacing: 2px;
+}
+
+.headline-11 {
+  color: #8a8a8a;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+.navbar-meetin2 {
+  max-width: 50vw;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  top: 30px;
+  border-top-left-radius: 53px;
+  border-bottom-left-radius: 53px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
+  background-color: #fff;
+}
+
+.navbar-meetin2 .navbar-brand {
+  padding: 0 0 0 20px;
+}
+
+.navbar-meetin2 .navbar-brand h2 {
+  margin: 0;
+}
+
+.meetin-app {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.meetin-app .meetin-sidebar {
+  position: absolute;
+  width: 26%;
+  left: 35px;
+  background-color: #fff;
+  bottom: 0;
+  min-height: 80vh;
+  z-index: 1;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.meetin-app .meetin-map {
+  position: absolute;
+  width: 100%;
+}
+
+.meetin-search__results-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.meetin-search__results-header h3 {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.meetin-search__results {
+  max-height: 68vh;
+  overflow-y: auto;
 }
 

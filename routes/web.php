@@ -13,9 +13,7 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/venues', function() {
-	return view('venues.index');
-});
+Route::get('/venues', 'VenuesController@index');
 
 
 Route::group(['prefix' => 'admin'], function () {

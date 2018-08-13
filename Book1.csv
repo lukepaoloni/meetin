@@ -1,15 +1,15 @@
-name,address_1,address_2,post_code,city,country_id,country,continent,phone,email,url,rooms,stars,bars,restaraunts,GEO LATITUDE,GEO LONGITUDE
-Accra,Rockley Beach,,BB15139,Rockley,BRB,Barbados,America,+1-246-4358920,salesmanager@accrabeachhotel.com,www.accrabeachhotel.com,224 ,4,,Y,13.074867474100971,-59.589721441334405
-Sunshine Suites,Esterley Tibbetts Highway,Seven Mile Beach,KY1-1201,Safehaven,CYM,Cayman Islands,America,+1-345-9493000,info@sunshinesuites.com,www.sunshinesuites.com,132 ,4,1,1,19.338549961989838,-81.37841999530787
-The Buccaneer,Estate Shoys,,00820-4536,Christiansted,VIR,U.S. Virgin Islands,America,+1-340-7122100,reservations@thebuccaneer.com,www.thebuccaneer.com,138 ,4S,Y,y,17.754311667779263,-64.68129068613052
-Posada Viena,Marsella,,06600,Mexico City,MEX,Mexico,America,+52-55-5660700,reservaciones@posadavienahotel.com,www.posadavienahotel.com.mx,88 ,4,,Y,19.426085847701536,-99.15776565670967
-Edgewater,Main St,,Y1A 2A7,Whitehorse,CAN,Canada,America,+1-867-6672572,reservations@yukonhotels.com,www.yukonhotels.com,30 ,3,Y,Y,60.71985271935393,-135.05063474178314
-Crowne Plaza Chengdu City Centre,Zong Fu Street,,610016,Chengdu,CHN,China,Asia,+86-28-86786666,info@ichotelsgroup.com,www.ihg.com,402 ,5,2,6,30.658982127555657,104.07699465751648
-Renaissance London Heathrow,Bath Road,Heathrow Airport,TW6 2AQ,Hounslow,GBR,United Kingdom,Europe,+44-20-88976363,customerservice@marriott.com,www.marriott.com,649 ,4,,Y,51.480632999999997,-0.44665199999999999
-Boston Court,Upper Berkeley Street,,W1H 7QL,London,GBR,United Kingdom,Europe,+44-20-77231445,info@bostoncourthotel.co.uk,www.bostoncourthotel.co.uk,15 ,2,,,51.515366967460054,-0.1610572636127472
-PortoBay Marquês,Rua Duque de Palmela,,1250-098,Lisbon,PRT,Portugal,Europe,+351-21-0032700,info@portobay.pt,www.portobay.com,72 ,4,Y,Y,38.723847720173154,-9.150150865316391
-Cinquentenário,Rua Francisco Marto,Cova da Iria,2495-448,Fatima,PRT,Portugal,Europe,+351-249-530400,hotel@hotelcinquentenario.com,www.hotelcinquentenario.com,196 ,4,Y,Y,39.629279544299216,-8.67097020149231
-Cascais Miragem,Avenida Marginal,,2754-536,Cascais,PRT,Portugal,Europe,+351-210-060600,geral@cascaismirage.com,www.cascaismirage.com,192 ,5,,Y,38.70232774364404,-9.410842538272846
-Tiles Madeira,Rua do Gorgulho,Estrada Monumental,9004-540,Funchal,PRT,Portugal,Europe,+351-291-700500,manager@tilesmadeirahotel.com,www.tilesmadeirahotel.com,115 ,4,Y,Y,32.63781075188518,-16.93062700331211
-Alpenblick,Alte Landesstraße,,5700,Zell,AUT,Austria,Europe,+43-6542-5433,hotel@alpenblick.at,www.alpenblick.at,100 ,4,Y,Y,47.307382883079825,12.792636305093765
-Fontana,Moos,,2513,Twann,CHE,Switzerland,Europe,+41-32-3150303,info@rooms.ch,www.rooms.ch,20 ,3,,Y,47.093679455842604,7.155302166938782
+name,address_1,address_2,post_code,city,country_id,phone,email,url,rooms,stars,bars,restaraunts,latitude,longitude
+Accra,Rockley Beach,,BB15139,Rockley,BRB,-4359165,salesmanager@accrabeachhotel.com,www.accrabeachhotel.com,224,4,0,1,13.07486747,-59.58972144
+Sunshine Suites,Esterley Tibbetts Highway,Seven Mile Beach,KY1-1201,Safehaven,CYM,-9493344,info@sunshinesuites.com,www.sunshinesuites.com,132,4,1,0,19.33854996,-81.37842
+The Buccaneer,Estate Shoys,,00820-4536,Christiansted,VIR,-7122439,reservations@thebuccaneer.com,www.thebuccaneer.com,138,4,1,1,17.75431167,-64.68129069
+Posada Viena,Marsella,,6600,Mexico City,MEX,-5660703,reservaciones@posadavienahotel.com,www.posadavienahotel.com.mx,88,4,0,1,19.42608585,-99.15776566
+Edgewater,Main St,,Y1A 2A7,Whitehorse,CAN,-6673438,reservations@yukonhotels.com,www.yukonhotels.com,30,3,1,1,60.71985272,-135.0506347
+Crowne Plaza Chengdu City Centre,Zong Fu Street,,610016,Chengdu,CHN,-86786608,info@ichotelsgroup.com,www.ihg.com,402,5,1,0,30.65898213,104.0769947
+Renaissance London Heathrow,Bath Road,Heathrow Airport,TW6 2AQ,Hounslow,GBR,-88976339,customerservice@marriott.com,www.marriott.com,649,4,0,1,51.480633,-0.446652
+Boston Court,Upper Berkeley Street,,W1H 7QL,London,GBR,-77231421,info@bostoncourthotel.co.uk,www.bostoncourthotel.co.uk,15,2,0,0,51.51536697,-0.161057264
+PortoBay Marquï¿½s,Rua Duque de Palmela,,1250-098,Lisbon,PRT,-32370,info@portobay.pt,www.portobay.com,72,4,1,1,38.72384772,-9.150150865
+Cinquentenï¿½rio,Rua Francisco Marto,Cova da Iria,2495-448,Fatima,PRT,-530298,hotel@hotelcinquentenario.com,www.hotelcinquentenario.com,196,4,1,1,39.62927954,-8.670970201
+Cascais Miragem,Avenida Marginal,,2754-536,Cascais,PRT,-60459,geral@cascaismirage.com,www.cascaismirage.com,192,5,0,1,38.70232774,-9.410842538
+Tiles Madeira,Rua do Gorgulho,Estrada Monumental,9004-540,Funchal,PRT,-700440,manager@tilesmadeirahotel.com,www.tilesmadeirahotel.com,115,4,1,1,32.63781075,-16.930627
+Alpenblick,Alte Landesstraï¿½e,,5700,Zell,AUT,-11932,hotel@alpenblick.at,www.alpenblick.at,100,4,1,1,47.30738288,12.79263631
+Fontana,Moos,,2513,Twann,CHE,-3150294,info@rooms.ch,www.rooms.ch,20,3,0,1,47.09367946,7.155302167

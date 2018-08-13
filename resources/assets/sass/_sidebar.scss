@@ -1,0 +1,58 @@
+.navbar-meetin2 {
+    max-width: 50vw;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    top: 30px;
+    border-top-left-radius: 53px;
+    border-bottom-left-radius: 53px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.11);
+    background-color: #fff;
+    .navbar-brand {
+        padding: 0 0 0 20px;
+        h2 {
+            margin: 0;
+        }
+    }
+}
+.meetin-app {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .meetin-sidebar {
+        position: absolute;
+        width: 26%;
+        left: 35px;
+        background-color: #fff;
+        bottom: 0;
+        min-height: 80vh;
+        z-index: 1;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.11);
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .meetin-map {
+        position: absolute;
+        width: 100%;
+    }
+}
+.meetin-search__results-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EFEFEF;
+    h3 {
+        text-align: right;
+        padding-right: 15px;
+    }
+}
+
+.meetin-search__results {
+    max-height: 68vh;
+    overflow-y: auto;
+}

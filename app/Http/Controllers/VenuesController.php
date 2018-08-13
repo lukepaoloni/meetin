@@ -8,6 +8,13 @@ use TCG\Voyager\Http\Controllers\VoyagerBreadController;
 
 class VenuesController extends VoyagerBreadController
 {
+    
+    public function index()
+    {
+        $venues = Venue::all();
+        $count = $venues->count();
+        return view('venues.index', compact('count', 'venues'));
+    }
 
     public function search()
     {

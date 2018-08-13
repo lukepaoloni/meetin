@@ -5,17 +5,13 @@
 </head>
 <body class="@yield('body') bg-light">
     <div id="app">
-        <header>
-            <div class="container-fluid">
-                @include('components.nav')
-            </div>
+        <header class="container-fluid">
+            @include('components.nav2')
         </header>
 
-        <div class="@yield('layout')">
+        <div class="meetin-app">
             @include('components.alerts')
-            <div class="row">
-                @yield('content')
-            </div>
+            @yield('content')
         </div>
 
         @include('partials._footer')
