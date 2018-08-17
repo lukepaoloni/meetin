@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light navbar-meetin row">
-    <a href="#" class="navbar-brand">
+    <a href="/" class="navbar-brand">
         <h2><?= __( 'Meetin' ); ?></h2>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"

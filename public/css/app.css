@@ -10728,13 +10728,22 @@ a.text-dark:focus {
   margin-left: 10px;
 }
 
+.background-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.background-left {
+  background-position: left;
+}
+
 .venue-search {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0 10px 60px;
-          box-shadow: rgba(0, 0, 0, 0.06) 0 10px 60px;
+  -webkit-box-shadow: rgba(200, 200, 200, 0.18) 0 0 20px 0px;
+          box-shadow: rgba(200, 200, 200, 0.18) 0 0 20px 0px;
   border-radius: 64px;
 }
 
@@ -10811,8 +10820,8 @@ input.meetin-search:placeholder {
 .btn-lg,
 .btn-group-lg > .btn {
   min-width: 100px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.13) 3px 4px 15px;
-          box-shadow: rgba(0, 0, 0, 0.13) 3px 4px 15px;
+  -webkit-box-shadow: rgba(200, 200, 200, 0.18) 0 0 20px 0px;
+          box-shadow: rgba(200, 200, 200, 0.18) 0 0 20px 0px;
   border-radius: 22px;
 }
 

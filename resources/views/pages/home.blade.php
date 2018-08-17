@@ -1,59 +1,14 @@
 @extends('layouts.default')
+@section('body', 'bg-white')
 @section('title', 'Home')
-@section('layout', 'container')
 
 @section('scripts')
     <script>
         function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: -33.8688, lng: 151.2195},
-                zoom: 13
-            });
             var input = document.getElementById('venue-search__input');
             var autocomplete = new google.maps.places.Autocomplete(input);
-            autocomplete.bindTo('bounds', map);
             autocomplete.setFields(
                 ['address_components', 'geometry', 'icon', 'name']);
-            var infowindow = new google.maps.InfoWindow();
-            var infowindowContent = document.getElementById('infowindow-content');
-            infowindow.setContent(infowindowContent);
-            var marker = new google.maps.Marker({
-                map: map,
-                anchorPoint: new google.maps.Point(0, -29)
-            });
-            autocomplete.addListener('place_changed', function() {
-                infowindow.close();
-                marker.setVisible(false);
-                var place = autocomplete.getPlace();
-                if (!place.geometry) {
-                    // User entered the name of a Place that was not suggested and
-                    // pressed the Enter key, or the Place Details request failed.
-                    window.alert("No details available for input: '" + place.name + "'");
-                    return;
-                }
-
-                // If the place has a geometry, then present it on a map.
-                if (place.geometry.viewport) {
-                    map.fitBounds(place.geometry.viewport);
-                } else {
-                    map.setCenter(place.geometry.location);
-                    map.setZoom(17);  // Why 17? Because it looks good.
-                }
-                marker.setPosition(place.geometry.location);
-                marker.setVisible(true);
-                var address = '';
-                if (place.address_components) {
-                    address = [
-                        (place.address_components[0] && place.address_components[0].short_name || ''),
-                        (place.address_components[1] && place.address_components[1].short_name || ''),
-                        (place.address_components[2] && place.address_components[2].short_name || '')
-                    ].join(' ');
-                }
-                infowindowContent.children['place-icon'].src = place.icon;
-                infowindowContent.children['place-name'].textContent = place.name;
-                infowindowContent.children['place-address'].textContent = address;
-                infowindow.open(map, marker);
-            });
         }
     </script>
 	<script src="https://maps.googleapis.com/maps/api/js?key={{ setting('site.gmap_api_key') }}&libraries=places&callback=initMap" async defer></script>
@@ -98,19 +53,55 @@
                 </div>
                 {{ Form::close() }}
             </div>
-            <div class="col-12 mt-4">
-                <div id="map" style="min-height: 500px"></div>
-                <div id="infowindow-content">
-                    <img src="" width="16" height="16" id="place-icon">
-                    <span id="place-name"  class="title"></span><br>
-                    <span id="place-address"></span>
-                </div>
-            </div>
         </div>
 	</div>
 </div>
 @stop
-
+@section('layout', 'container-fluid')
 @section('content')
-
+<div class="col-12 py-5">
+    <div class="row justify-content-between">
+        <div class="hidden-sm col-6 pl-0">
+            <div class="background-image background-left" style="background-image: url(/images/home/video.svg); min-height: 750px;"></div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h3 class="headline-15 text-lowercase">
+                        {{ __('lets organise') }}
+                    </h3>
+                    <h3 class="headline-3">
+                        {{ __('Your daily life') }}
+                    </h3>
+                    <div class="py-4 mt-5">
+                        <ul class="list icon-list p-0 float-left">
+                            <li class="list-item icon-list-item d-flex justify-content-between pb-5">
+                                <span class="icon icon-team"></span>
+                                <div class="list-item__text pl-4">
+                                    <h4 class="headline-4 mb-2 text-left">{{ __('Task Management') }}</h4>
+                                    <p class="lead text-left">It is a long established fact that</p>
+                                </div>
+                            </li>
+                            <li class="list-item icon-list-item d-flex justify-content-between pb-5">
+                                <span class="icon icon-team"></span>
+                                <div class="list-item__text pl-4">
+                                    <h4 class="headline-4 mb-2 text-left">{{ __('Task Management') }}</h4>
+                                    <p class="lead text-left">It is a long established fact that</p>
+                                </div>
+                            </li>
+                            <li class="list-item icon-list-item d-flex justify-content-between pb-5">
+                                <span class="icon icon-team"></span>
+                                <div class="list-item__text pl-4">
+                                    <h4 class="headline-4 mb-2 text-left">{{ __('Task Management') }}</h4>
+                                    <p class="lead text-left">It is a long established fact that</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="hidden-sm col-md-4"></div>
+            </div>
+        </div>
+    </div>
+</div>
 @stop

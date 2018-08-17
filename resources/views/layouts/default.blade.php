@@ -3,7 +3,7 @@
 <head>
     @include('partials._head')
 </head>
-<body class="@yield('body') bg-light">
+<body class="@yield('body')">
     <div id="app">
         <header class="bg-white">
             <div class="meetin-navbar-1 pt-lg-3">
