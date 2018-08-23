@@ -1,7 +1,8 @@
 <svg width="870" height="598" viewBox="0 0 870 598" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M722.043 166.078C722.043 306.363 489.389 512.522 348.987 512.522C208.586 512.522 0 247.746 0 107.46C0 -32.8254 208.586 4.50347 348.987 4.50347C489.389 4.50347 722.043 25.7921 722.043 166.078Z" transform="translate(111.298 44.514)" fill="#2F82FF" fill-opacity="0.09"/>
-<path d="M582.685 348.227C507.134 437.405 165.077 372.599 25.656 254.402C-113.765 136.205 356.966 111.473 432.517 22.2941C508.068 -66.8848 695.095 132.444 834.516 250.641C973.937 368.838 658.237 259.048 582.685 348.227Z" transform="translate(0.241547 177.918)" fill="#AAAAAA" fill-opacity="0.09"/>
-<path d="M0 0H693V598H0V0Z" transform="translate(140)" fill="url(#pattern0)"/>
+<rect width="869.628" height="598" fill="black" fill-opacity="0" transform="translate(0.241547)"/>
+<path d="M833.341 210.592C833.341 350.877 600.687 557.036 460.285 557.036C319.884 557.036 111.298 292.26 111.298 151.974C111.298 11.6886 319.884 49.0174 460.285 49.0174C600.687 49.0174 833.341 70.3061 833.341 210.592Z" fill="#2F82FF" fill-opacity="0.09"/>
+<path d="M582.926 526.144C507.376 615.323 165.318 550.517 25.8976 432.32C-113.524 314.123 357.207 289.39 432.758 200.212C508.31 111.033 695.336 310.361 834.757 428.558C974.178 546.755 658.478 436.965 582.926 526.144Z" fill="#AAAAAA" fill-opacity="0.09"/>
+<path d="M140 0H833V598H140V0Z" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(-0.0416072 -0.242475) scale(0.000558082)"/>

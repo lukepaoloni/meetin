@@ -2,6 +2,7 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
     @include('partials._head')
+    @yield('scripts-head')
 </head>
 <body class="@yield('body')">
     <div id="app">
@@ -16,14 +17,12 @@
 
         <div class="@yield('layout')">
             @include('components.alerts')
-            <div class="row">
-                @yield('content')
-            </div>
+            @yield('content')
         </div>
 
         @include('partials._footer')
     </div>
-    @yield('scripts')
+    @yield('scripts-footer')
     @include('assets.scripts')
 </body>
 </html>

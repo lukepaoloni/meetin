@@ -2,15 +2,39 @@
 
 namespace App;
 
+
 class Venue extends Model
 {
     protected $guarded = [];
 
-    const TABLE = 'venues';
-
     public function getMaxStars()
     {
       return 5;
+    }
+    
+    public function meetingRoomDisabledAccess()
+    {
+        return $this->meeting_room_disabled_access ? 'Yes' : 'No';
+    }
+    
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
+    
+    public function features()
+    {
+        return $this->belongsToMany(Feature::class)->get();
+    }
+    
+    public function reviews()
+    {
+        return $this->hasMany(Review::class)->where('status', '=', 'approved');
+    }
+    
+    public function rating()
+    {
+        return sprintf("%.1f", $this->reviews()->average('rating'));
     }
 
     public function getAddress()

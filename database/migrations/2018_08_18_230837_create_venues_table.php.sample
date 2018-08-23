@@ -1,0 +1,51 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateVenuesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('venues', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('country_id')->unsigned();
+            $table->foreign('country_id')->references('id')->on('countries');
+            $table->string('name');
+            $table->string('address_1');
+            $table->string('address_2');
+            $table->string('city');
+            $table->string('postcode');
+            $table->string('latitude');
+            $table->string('longitude');
+            $table->text('overview');
+            $table->text('content');
+            $table->integer('meeting_capacity')->unsigned();
+            $table->integer('no_meeting_rooms')->unsigned();
+            $table->integer('catering_capacity')->unsigned();
+            $table->integer('no_bedrooms')->unsigned();
+            $table->tinyInteger('meeting_room_disabled_access')->unsigned()->default('0');
+            $table->text('features');
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('venues');
+    }
+}

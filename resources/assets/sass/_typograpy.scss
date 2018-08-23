@@ -1,6 +1,8 @@
 .headline-10 {
     color: #A3A3A3;
     font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
 }
 .navbar-brand {
     h2 {
@@ -13,10 +15,86 @@
     font-weight: 700;
     font-size: 18px;
     margin: 0;
+    line-height: normal;
 }
 
 .headline-12 {
     font-size: 18px;
     font-weight: 700;
     color: #444;
+    line-height: normal;
+}
+.headline-15 {
+    color: #cacaca;
+    font-weight: 300;
+    font-size: 36px;
+    font-family: $poppins;
+    line-height: normal;
+}
+
+.headline-3 {
+    font-size: 48px;
+    color: #313131;
+    font-weight: 600;
+    font-family: $poppins;
+    line-height: normal;
+}
+.headline-4 {
+    font-family: $poppins;
+    color: #484848;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: normal;
+}
+
+p.lead {
+    color: #949494;
+    font-family: $poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.headline-8 {
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.headline-13 {
+    font-family: $poppins;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.font-white {
+    color: white;
+}
+.headline-5 {
+    text-transform: uppercase;
+    font-family: $poppins;
+    font-size: 18px;
+    color: #6A6A6A;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.headline-6 {
+    font-family: $poppins;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #282828;
+}
+.headline-7 {
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #313131;
+    font-family: $poppins;
+    text-transform: uppercase;
 }

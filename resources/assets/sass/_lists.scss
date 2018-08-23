@@ -1,0 +1,9 @@
+.image-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.image-list > .image-item:nth-child(even) {
+    margin-top: 75px;
+}

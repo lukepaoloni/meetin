@@ -1,8 +1,12 @@
 .venue-search {
     width: 100%;
     display: flex;
-    box-shadow: rgba(200, 200, 200, 0.18) 0 0 20px 0px;
+    box-shadow: rgba(56, 56, 56, 0.06) 0 10px 60px 0px;
     border-radius: 64px;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
     .input-search {
         min-height: 64px;
         border-radius: 64px 0 0 64px;
@@ -26,7 +30,9 @@
         line-height: normal;
     }
 }
-
+.meetin-search__result:hover {
+    box-shadow: #3a3a3a3d 0px 0 60px;
+}
 .meetin-search__wrapper {
     padding: 10px;
     border-bottom: 1px solid #EFEFEF;

@@ -13,8 +13,6 @@
             @include('components.alerts')
             @yield('content')
         </div>
-
-        @include('partials._footer')
     </div>
     @include('assets.scripts')
     @yield('scripts')

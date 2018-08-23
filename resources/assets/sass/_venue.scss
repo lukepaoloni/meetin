@@ -1,0 +1,102 @@
+.venue-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.overview-list > .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.venue-panel__rating {
+    display: flex;
+    align-items: center;
+}
+li.review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+li.review:not(:last-of-type) {
+    border-bottom: 1px solid #e5e5e5;
+}
+li.review > .review-col:first-of-type {
+    flex-basis: 10%;
+}
+
+.user-avatar {
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+p.user {
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.user-stats {
+    text-align: center;
+}
+
+.review-col:nth-child(2) {
+    flex-basis: 70%;
+}
+
+.review-col:nth-child(3) {
+    flex-basis: 10%;
+}
+
+.review-timestamp {
+    font-size: 14px;
+    color: #929292;
+}
+
+.btn.btn-flag {
+    min-width: auto;
+}
+.venue-image__slider {
+    position: relative;
+    min-height: 500px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    .venue-slider__img {
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    border-top-left-radius: 22px;
+	    border-top-right-radius: 22px;
+	}
+}
+.related-venue .venue-thumbnail {
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.related-venues > .related-venue {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+span.review-count {
+    color: #bdbdbd;
+    font-size: 18px;
+}
+.related-venues > .related-venue .related-venue-content {
+    margin-left: 20px;
+}
