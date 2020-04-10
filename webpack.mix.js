@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -19,7 +19,7 @@ mix.sass('resources/assets/sass/app.scss', 'public/css')
         ]
     });
 mix.sourceMaps();
-mix.browserSync('meetin.local');
+mix.browserSync('meetin.test');
 
 if (mix.inProduction()) {
     mix.version();

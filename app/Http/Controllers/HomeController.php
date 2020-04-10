@@ -16,7 +16,7 @@ class HomeController extends Controller
     	return $request;
 		$response = \GoogleMaps::load('placeautocomplete')
            ->setParam([
-                'input'     => $request,
+                'input' => $request,
                 'type' => 'geocode',
                 'components' => [
                 	'country' => 'GB'
