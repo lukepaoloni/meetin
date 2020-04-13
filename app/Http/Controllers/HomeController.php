@@ -6,23 +6,14 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function index()
     {
-	    return view('pages.home');
-    }
-
-    public function search(Request $request)
-    {
-    	return $request;
-		$response = \GoogleMaps::load('placeautocomplete')
-           ->setParam([
-                'input' => $request,
-                'type' => 'geocode',
-                'components' => [
-                	'country' => 'GB'
-                ],
-            ])
-            ->getResponseByKey('results');
-		return($response);
+        return view('pages.home');
     }
 }

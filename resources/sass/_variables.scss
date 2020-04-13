@@ -1,24 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,900|Roboto:400,700');
 // Body
-$body-bg: #f5f8fa;
+$body-bg: #f8fafc;
 
 // Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
-$font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-family: $font-family-sans-serif;
-$poppins: 'Poppins', 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$border-radius: 22px;
-$font-size-base: 1rem;
 
-//Colours
-$blue: #2F82FF;
-$navbar-light-active-color: $blue;
-
-
-$container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1400px
-);
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;

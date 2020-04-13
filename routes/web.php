@@ -22,3 +22,5 @@ Route::get('/', 'HomeController@index');
 Route::get('venues', 'VenuesController@index');
 
 Route::get('/venues/{venue}', 'VenuesController@show');
+
+Auth::routes();
